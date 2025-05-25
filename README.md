@@ -6,39 +6,57 @@ This project analyzes Yelp review and business data to identify high-potential U
 
 ## Objective
 
-- Identify underserved cuisines that are highly rated but less saturated
-- Use sentiment analysis and clustering to recommend geographic areas for restaurant growth
-- Analyze review trends and competition across categories and counties
+- Use Yelp business and review data to recommend optimal restaurant locations
+- Identify underserved cuisines with high demand and low competition
+- Apply sentiment analysis to gauge customer satisfaction trends
 
 ---
 
 ## Tools Used
 
-- Python (Pandas, Numpy, Scikit-learn, Matplotlib, Seaborn)
-- NLP: NLTK, SpaCy, TF-IDF, VADER
-- Modeling: Logistic Regression, Naive Bayes, Random Forest, LSTM
-- Clustering: KMeans
+- Python (Pandas, NumPy, Matplotlib, Seaborn)
+- NLP: NLTK, SpaCy, VADER
+- Machine Learning: Logistic Regression, Naive Bayes, Random Forest, LSTM
+- Geospatial Clustering: KMeans
 - Jupyter Notebook
 
 ---
 
-## Key Features
+## Project Summary
 
-- Cleaned and merged Yelp business, review, and user data
-- Visualized review count, average rating, and sentiment polarity by category and region
-- Built sentiment classification models (VADER, TF-IDF + ML, LSTM)
-- Applied KMeans clustering using coordinates, reviews, and star ratings
-- Identified top regions with demand/supply gap
+- Filtered Yelp data to include 10,000 reviews from 1,000 active restaurants across two major U.S. cities
+- Conducted exploratory analysis to understand review length, rating trends, and business distribution
+- Applied SpaCy and VADER for sentiment scoring and text preprocessing
+- Found that **85% of reviews were Positive**, with strong mentions of food quality and service
+- Built multiple sentiment classifiers (TF-IDF + Logistic Regression, Naive Bayes, and LSTM)
+- Used KMeans clustering to identify regional saturation and highlight expansion zones
 
 ---
 
 ## Insights
 
--  **Underserved cuisines** with growth potential:
-  - Cajun/Creole, Acai Bowls, Chicken Wings, Live/Raw Food
--  **Best expansion regions**:
-  - Martin County (IN), Hillsborough County (FL), New Orleans (LA)
--  **Saturated categories**:
-  - American (New), Bars, Traditional American
+- **Underserved cuisines** with potential: Cajun/Creole, Acai Bowls, Chicken Wings
+- **Top regions for growth**: Martin County (IN), Hillsborough (FL), New Orleans (LA)
+- **Oversaturated categories**: American (New), Traditional American, Bars
+- VADER sentiment showed that 85%+ reviews were positive, validating customer satisfaction in targeted categories
 
 ---
+
+## Sample Visuals
+
+This figure summarizes the exploratory analysis on Yelp reviews:
+
+- Distribution of review lengths
+- Star rating breakdown
+- Cities with the most businesses
+
+![EDA Summary](Visuals.png)
+
+---
+
+## Dataset
+
+- [Yelp Academic Dataset](https://www.yelp.com/dataset)
+
+---
+
